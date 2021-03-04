@@ -8,11 +8,11 @@ const tableElement = document.createElement("table");
 //Create rows and cells
 for (i = 1; i <=12; i++){
   const tableRow = document.createElement("tr")
-  const tableCell = document.createElement("tc");
+  const tableCell = document.createElement("td");
   tableCell.innerText = i;
   
   // Add Cell border
-  tableCell.style.border="1px solid black"
+  tableCell.style.border="1px solid black";
 
 // Blue background for numbers divisible by 4
 if(i%4 === 0){

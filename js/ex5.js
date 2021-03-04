@@ -1,9 +1,11 @@
+//Create and run a function to add a link to the College of Busines between the CSULB link and the IS link.
 
-function add_link(){
-  const link=document.createElement("Li");
-  link.innerHTML="<a href='https://www.csulb.edu/college-of-business'>College of Business</a>"
-  const link_list=document.getElementById("links");
-  link_list.insertBefore(link,link_list.childNodes[2]);
+function cobLinks(){
+  const linkElement = document.createElement("li");
+  linkElement.id = "coblink"; // Define element ID
+  linkElement.innerHTML = "<a href='https://www.csulb.edu/college-of-business'>College Of Business</a>"; // Define its text content
+  document.getElementById("links").insertBefore(linkElement, document.getElementById("csulb2"));
 }
 
-add_link();
+//Call Function
+cobLinks();
